@@ -1,0 +1,135 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* COLOR VAR */
+:root {
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+
+  --Brown-800: hsl(14, 45%, 36%);
+
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+/* FONT FAMILY VAR */
+:root {
+  --outfit: "Outfit", serif;
+  --young-serif: "Young Serif", serif;
+}
+section {
+  width: 95%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex-flow: column;
+}
+ul,
+ol {
+  list-style-position: outside;
+  padding: 0 2rem;
+  font-family: var(--outfit);
+  color: var(--Stone-600);
+  font-size: 1.1rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.image {
+  padding: 0;
+  width: 100%;
+}
+img {
+  width: 100%;
+  padding: 0;
+}
+/* section {
+  width: 23rem;
+} */
+.header-text {
+  width: 95%;
+  justify-items: center;
+  /* border: solid black; */
+}
+
+h1 {
+  font-family: var(--young-serif);
+  color: var(--Stone-900);
+  padding: 1rem 0;
+  font-size: 2.3rem;
+  width: 95%;
+}
+p {
+  font-family: var(--outfit);
+  color: var(--Stone-600);
+  font-size: 1.1rem;
+  padding: 0.4rem;
+}
+.header-text,
+.preparation-time {
+  padding: 1rem;
+  width: 95%;
+}
+.preparation-time h2 {
+  font-family: var(--outfit);
+  color: var(--Rose-800);
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+.preparation-time {
+  background: var(--Rose-50);
+  border-radius: 3%;
+  /* border: solid black; */
+}
+.preparation-time ::marker {
+  color: var(--Rose-800);
+}
+h2 {
+  font-family: var(--young-serif);
+  color: var(--Brown-800);
+  font-weight: 500;
+  font-size: 1.7rem;
+  padding: 0.7rem;
+}
+.ingredients ul {
+  padding: 0 2rem;
+  border-bottom: solid 1px var(--Stone-150);
+}
+.instructions ol ::marker {
+  color: var(--Stone-800);
+  font-weight: 800;
+}
+.instructions {
+  border-bottom: solid 1px var(--Stone-150);
+}
+tr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  border-bottom: 1px solid var(--Stone-150);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+[data-cell="nutrient-amount"] {
+  font-family: var(--outfit);
+  color: var(--Brown-800);
+  font-weight: 600;
+}
+[data-cell="nutrient"] {
+  font-family: var(--outfit);
+  color: var(--Stone-600);
+}
